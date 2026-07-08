@@ -1,0 +1,18 @@
+{
+  "Navbar": {
+    "home": "Beranda",
+    "about": "Tentang Kami",
+    "services": "Layanan",
+    "clients": "Klien",
+    "contact": "Hubungi Kami"
+  },
+
+  "Footer": {
+    "description": "PT Aksata Nusantara Infosysjaya merupakan perusahaan teknologi yang menyediakan solusi digital inovatif untuk membantu transformasi bisnis melalui layanan software, hardware, dan konsultasi TI.",
+    "navigation": "Navigasi",
+    "services": "Layanan",
+    "contact": "Hubungi Kami",
+    "copyright": "Seluruh hak cipta dilindungi."
+  }
+}
+

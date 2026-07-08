@@ -1,0 +1,17 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "clients": "Clients",
+    "contact": "Contact"
+  },
+
+  "Footer": {
+    "description": "PT Aksata Nusantara Infosysjaya is a technology company providing innovative digital solutions to support business transformation through software, hardware, and IT consulting services.",
+    "navigation": "Navigation",
+    "services": "Services",
+    "contact": "Contact",
+    "copyright": "All rights reserved."
+  }
+}
