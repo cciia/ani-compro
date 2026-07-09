@@ -8,11 +8,33 @@
   },
 
   "Footer": {
-    "description": "PT Aksata Nusantara Infosysjaya merupakan perusahaan teknologi yang menyediakan solusi digital inovatif untuk membantu transformasi bisnis melalui layanan software, hardware, dan konsultasi TI.",
-    "navigation": "Navigasi",
+    "description": "PT Aksata Nusantara Infosysjaya merupakan perusahaan teknologi yang menyediakan solusi digital inovatif untuk membantu transformasi bisnis melalui layanan software, hardware dan konsultasi TI.",
+    "navigation": {
+    "title": "Navigasi",
+    "home": "Beranda",
+    "about": "Tentang Kami",
     "services": "Layanan",
-    "contact": "Hubungi Kami",
-    "copyright": "Seluruh hak cipta dilindungi."
+    "clients": "Klien",
+    "contact": "Hubungi Kami"
+  },
+
+  "services": {
+    "title": "Layanan Kami",
+    "appDevelopment": "Pengembangan Aplikasi",
+    "itConsulting": "Konsultasi TI",
+    "systemAnalysis": "Analisis Sistem",
+    "technicalSupport": "Dukungan Teknis",
+    "technologyTraining": "Pelatihan Teknologi"
+  },
+
+  "contact": {
+    "title": "Hubungi Kami",
+    "email": "aksatanusantara@gmail.com",
+    "phone": "0878-6717-1882",
+    "address": "Perum Taman Pondok Jati Blok L No.11 Sidoarjo"
+  },
+
+  "copyright": "© 2026 PT Aksata Nusantara Infosysjaya. Hak cipta dilindungi."
   }
 }
 

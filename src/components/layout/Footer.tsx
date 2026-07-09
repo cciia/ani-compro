@@ -4,151 +4,126 @@ import Image from "next/image";
 import Link from "next/link";
 import {HiOutlineEnvelope, HiOutlinePhone, HiOutlineMapPin,} from "react-icons/hi2";
 import {FaInstagram, FaLinkedin,} from "react-icons/fa6";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations("Footer")
   const navigation = [
-    { name: "Beranda", href: "#home" },
-    { name: "Tentang Kami", href: "#about" },
-    { name: "Layanan", href: "#services" },
-    { name: "Klien", href: "#clients" },
-    { name: "Hubungi Kami", href: "#contact" },
+    { name: t("navigation.home"), href: "#home" },
+    { name: t("navigation.about"), href: "#about" },
+    { name: t("navigation.services"), href: "#services" },
+    { name: t("navigation.clients"), href: "#clients" },
+    { name: t("navigation.contact"), href: "#contact" },
   ];
 
   const services = [
-    "Pengembangan Aplikasi",
-    "Konsultasi TI",
-    "Analisis Sistem",
-    "Dukungan Teknis",
-    "Pelatihan Teknologi",
+    t("services.appDevelopment"),
+    t("services.itConsulting"),
+    t("services.systemAnalysis"),
+    t("services.technicalSupport"),
+    t("services.technologyTraining"),
   ];
-
   const socials = [
-    {
-      href: "mailto:aksatanusantara@gmail.com",
-      icon: HiOutlineEnvelope,
-    },
-    {
-      href: "https://instagram.com",
-      icon: FaInstagram,
-    },
-    {
-      href: "tel:+6287867171882",
-      icon: HiOutlinePhone,
-    },
-    {
-      href: "https://linkedin.com",
-      icon: FaLinkedin,
-    },
+    {href: "mailto:aksatanusantara@gmail.com", icon: HiOutlineEnvelope,},
+    {href: "https://instagram.com", icon: FaInstagram,},
+    {href: "tel:+6287867171882", icon: HiOutlinePhone,},
+    {href: "https://linkedin.com", icon: FaLinkedin,},
   ];
-  return (
-    <footer style={{"var(--surface)",}}>
-      <div className="mx-auto max-w-6xl px-6 py-16">
-        <div className="grid gap-10 lg:grid-cols-4">
-          <div>
-            <Image
-              src="/logos/logo.png"
-              alt="ANI Logo"
-              width={65}
-              height={65}
-              priority/>
-            <h2 className="mt-4 text-2xl font-bold leading-tight text-gray-900">
-              PT Aksata Nusantara
-              <br />
-              Infosysjaya
+  
+   return (
+    <footer style={{background: "var(--surface)",}}>
+      <div className="mx-auto max-w-6xl px-6 pt-4 pb-3">
+        <div className="grid gap-4 lg:grid-cols-12">
+          <div className="lg:col-span-5 flex flex-col items-center text-center lg:items-start lg:text-left">
+              <Image src="/logos/logo-ani.png" alt="ANI Logo" width={60} height={60} priority/>
+            <h2
+              className="mt-3 text-xl font-bold" style={{ color: "var(--text-primary)" }}>
+              PT Aksata Nusantara Infosysjaya
             </h2>
-            <p className="mt-6 leading-7 text-gray-500">
-              PT Aksata Nusantara Infosysjaya adalah perusahaan teknologi
-              yang berkomitmen menghadirkan solusi digital inovatif untuk
-              mendukung pertumbuhan bisnis di era transformasi digital.
+            <p
+              className="mt-3 text-sm leading-6" style={{ color: "var(--text-secondary)" }}>
+              {t("description")}
             </p>
-            <div className="mt-8 flex gap-3">
+            <div className="mt-5 flex justify-center gap-3 lg:justify-start">
               {socials.map(({ href, icon: Icon }, index) => (
                 <Link
-                  key={index}
-                  href={href}
-                  className="rounded-md bg-orange-500 p-3 text-white transition-all duration-300 hover:scale-105 hover:bg-orange-600">
-                  <Icon size={20} />
+                  key={index} href={href} className="rounded-xl p-3 transition-all duration-300 hover:scale-105" style={{background: "var(--primary)", color: "#fff",}}>
+                  <Icon size={18} />
                 </Link>
               ))}
             </div>
           </div>
-          <div>
-            <h3 className="text-lg font-bold uppercase text-gray-900">
-              Navigasi
-            </h3>
-            <ul className="mt-8 space-y-3">
+          <div className="lg:col-span-2 flex flex-col items-center text-center">
+            <h3 className="text-base font-bold uppercase" style={{ color: "var(--text-primary)" }}>{t("navigation.title")}</h3>
+            <ul className="mt-3 space-y-2 text-sm">
               {navigation.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-gray-500 transition hover:text-orange-500">
+                    className="transition-colors duration-300"
+                    style={{color: "var(--text-secondary)",}}
+                    onMouseEnter={(e) =>
+                      (e.currentTarget.style.color = "var(--primary)")
+                    }
+                    onMouseLeave={(e) =>
+                      (e.currentTarget.style.color = "var(--text-secondary)")
+                    }>
                     {item.name}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
-          <div>
-            <h3 className="text-xl font-bold uppercase text-gray-900">
-              Layanan Kami
+          <div className="lg:col-span-2 flex flex-col items-center text-center">
+            <h3 className="text-base font-bold uppercase" style={{ color: "var(--text-primary)" }}>
+              {t("services.title")}
             </h3>
-            <ul className="mt-8 space-y-5">
+            <ul className="mt-4 space-y-2 text-sm">
               {services.map((service) => (
                 <li
-                  key={service}
-                  className="text-gray-500">
+                  key={service} style={{color: "var(--text-secondary)",}}>
                   {service}
                 </li>
               ))}
             </ul>
           </div>
-          <div>
-            <h3 className="text-xl font-bold uppercase text-gray-900">
-              Hubungi Kami
+         <div className="lg:col-span-3 flex flex-col items-center text-center">
+            <h3 className="text-base font-bold uppercase" style={{ color: "var(--text-primary)" }}>
+              {t("contact.title")}
             </h3>
-            <div className="mt-8 space-y-6">
+            <div className="mt-4 space-y-3 text-sm">
               <div className="flex items-start gap-4">
                 <HiOutlineEnvelope
-                  size={22}
-                  className="mt-1 text-orange-500"/>
-                <p className="text-gray-500">
+                  size={18}
+                  style={{ color: "var(--primary)" }}/>
+                <p style={{ color: "var(--text-secondary)" }}>
                   aksatanusantara@gmail.com
                 </p>
               </div>
               <div className="flex items-start gap-4">
                 <HiOutlinePhone
-                  size={22}
-                  className="mt-1 text-orange-500"/>
-                <p className="text-gray-500">
+                  size={18}
+                  style={{ color: "var(--primary)" }}/>
+                <p style={{ color: "var(--text-secondary)" }}>
                   0878-6717-1882
                 </p>
               </div>
               <div className="flex items-start gap-4">
                 <HiOutlineMapPin
-                  size={22}
-                  className="mt-1 text-orange-500"/>
-                <p className="text-gray-500 leading-7">
-                  Perum Taman Pondok Jati
-                  <br />
-                  Blok L No.11
-                  <br />
-                  Sidoarjo - Jawa Timur
+                  size={18}
+                  style={{ color: "var(--primary)" }}/>
+                <p className="leading-7" style={{ color: "var(--text-secondary)" }}>
+                  Perum Taman Pondok Jati <br /> Blok L No.11 Sidoarjo
                 </p>
               </div>
             </div>
-            <div className="mt-8 overflow-hidden rounded-lg border">
-              <Image
-                src="/images/maps.png"
-                alt="Google Maps"
-                width={350}
-                height={200}
-                className="h-auto w-full object-cover"
-              />
+            <div className="mt-4 overflow-hidden rounded-2xl" style={{border: "1px solid var(--border)",}}>
+              <Image src="/images/maps.png" alt="Google Maps" width={300} height={160} className="h-auto w-full object-cover"/>
             </div>
           </div>
         </div>
-        <div className="mt-16 border-t border-orange-300 pt-8 text-sm text-gray-500">
-          © 2026 PT Aksata Nusantara Infosysjaya. Hak cipta dilindungi.
+        <div className="mt-8 pt-3 text-xs" style={{borderTop: "1px solid var(--primary)", color: "var(--primary)",}}>
+          {t("copyright")}
         </div>
       </div>
     </footer>

@@ -8,10 +8,32 @@
   },
 
   "Footer": {
-    "description": "PT Aksata Nusantara Infosysjaya is a technology company providing innovative digital solutions to support business transformation through software, hardware, and IT consulting services.",
-    "navigation": "Navigation",
-    "services": "Services",
-    "contact": "Contact",
-    "copyright": "All rights reserved."
+    "description": "PT Aksata Nusantara Infosysjaya is a technology company providing innovative digital solutions to support business transformation through software, hardware and IT consulting services.",
+    "navigation": {
+      "title": "Navigation",
+      "home": "Home",
+      "about": "About Us",
+      "services": "Services",
+      "clients": "Clients",
+      "contact": "Contact"
+    },
+
+    "services": {
+      "title": "Our Services",
+      "appDevelopment": "Application Development",
+      "itConsulting": "IT Consulting",
+      "systemAnalysis": "System Analysis",
+      "technicalSupport": "Technical Support",
+      "technologyTraining": "Technology Training"
+    },
+
+    "contact": {
+      "title": "Contact Us",
+      "email": "aksatanusantara@gmail.com",
+      "phone": "0878-6717-1882",
+      "address": "Perum Taman Pondok Jati Block L No.11, Sidoarjo"
+    },
+
+    "copyright": "© 2026 PT Aksata Nusantara Infosysjaya. All rights reserved."
   }
 }
