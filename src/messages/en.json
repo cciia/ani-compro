@@ -35,5 +35,48 @@
     },
 
     "copyright": "© 2026 PT Aksata Nusantara Infosysjaya. All rights reserved."
+  },
+
+  "Hero": {
+    "title1": "Digital Transformation",
+    "title2": "Starts With Us",
+    "description": "PT Aksata Nusantara Infosysjaya delivers innovative technology solutions to help businesses improve efficiency, accelerate digital transformation, and achieve sustainable growth.",
+
+    "button": {
+      "primary": "Free Consultation",
+      "secondary": "Our Services"
+    },
+
+    "cards": {
+      "app": {
+        "title": "Application Development",
+        "description": "Innovative and high-quality web and mobile application solutions."
+      },
+
+      "consult": {
+        "title": "IT Consulting",
+        "description": "Professional IT consulting for effective business strategies."
+      },
+
+      "analysis": {
+        "title": "System Analysis",
+        "description": "Efficient and measurable system analysis and design."
+      },
+
+      "support": {
+        "title": "Technical Support",
+        "description": "Maintenance and technical support for optimal business operations."
+      },
+
+      "training": {
+        "title": "Technology Training",
+        "description": "Technology training to enhance your team's skills and expertise."
+      },
+
+      "integration": {
+        "title": "Integrated Solutions",
+        "description": "Integrated technology solutions tailored to your business needs."
+      }
+    }
   }
 }

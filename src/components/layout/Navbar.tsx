@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { HiOutlineBars3, HiOutlineXMark } from "react-icons/hi2";
 import ThemeToggle from "../ui/ThemeToggle";
-import LanguageSwitcher from "./LanguageSwitcher";
+import LanguageSwitcher from "../ui/LanguageSwitcher";
 
 export default function Navbar() {
   const t = useTranslations("Navbar");

@@ -35,6 +35,49 @@
   },
 
   "copyright": "© 2026 PT Aksata Nusantara Infosysjaya. Hak cipta dilindungi."
+  },
+
+  "Hero": {
+    "title1": "Transformasi Digital",
+    "title2": "Dimulai Bersama Kami",
+    "description": "PT Aksata Nusantara Infosysjaya menghadirkan solusi teknologi inovatif untuk membantu perusahaan meningkatkan efisiensi, mempercepat transformasi digital, dan menciptakan pertumbuhan bisnis yang berkelanjutan.",
+
+    "button": {
+      "primary": "Konsultasi Gratis",
+      "secondary": "Layanan Kami"
+    },
+
+    "cards": {
+      "app": {
+        "title": "Pengembangan Aplikasi",
+        "description": "Solusi aplikasi web dan mobile yang inovatif dan berkualitas."
+      },
+
+      "consult": {
+        "title": "Konsultasi TI",
+        "description": "Konsultasi teknologi informasi untuk strategi bisnis yang tepat."
+      },
+
+      "analysis": {
+        "title": "Analisis Sistem",
+        "description": "Analisis dan perancangan sistem yang efisien dan terukur."
+      },
+
+      "support": {
+        "title": "Dukungan Teknis",
+        "description": "Pemeliharaan dan dukungan teknis untuk operasional yang optimal."
+      },
+
+      "training": {
+        "title": "Pelatihan Teknologi",
+        "description": "Pelatihan dan transfer teknologi untuk meningkatkan kompetensi tim."
+      },
+
+      "integration": {
+        "title": "Solusi Terintegrasi",
+        "description": "Integrasi sistem dan teknologi sesuai kebutuhan bisnis Anda."
+      }
+    }
   }
 }
 

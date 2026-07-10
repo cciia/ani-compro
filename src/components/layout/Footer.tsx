@@ -23,6 +23,7 @@ export default function Footer() {
     t("services.technicalSupport"),
     t("services.technologyTraining"),
   ];
+  
   const socials = [
     {href: "mailto:aksatanusantara@gmail.com", icon: HiOutlineEnvelope,},
     {href: "https://instagram.com", icon: FaInstagram,},
@@ -122,7 +123,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-8 pt-3 text-xs" style={{borderTop: "1px solid var(--primary)", color: "var(--primary)",}}>
+        <div className="mt-8 pt-3 text-xs" style={{borderTop: "1px solid var(--primary)", color: "var(--text-secondary)",}}>
           {t("copyright")}
         </div>
       </div>
