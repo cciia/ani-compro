@@ -78,5 +78,86 @@
         "description": "Integrated technology solutions tailored to your business needs."
       }
     }
+  },
+
+  "About": {
+    "badge": "About Us",
+
+    "title1": "Technology Partner",
+    "title2": "growing together",
+
+    "description": "PT Aksata Nusantara Infosysjaya is a Software & Hardware House focused on delivering modern digital solutions. We help businesses improve efficiency, productivity, and digital transformation through innovative, secure, and sustainable technology.",
+
+    "features": {
+      "solution": {
+        "title": "Innovative Solutions",
+        "description": "Developing applications and systems tailored to modern business needs."
+      },
+      "collaboration": {
+        "title": "Professional Collaboration",
+        "description": "Working closely with clients to deliver effective and valuable technology solutions."
+      },
+      "integrity": {
+        "title": "Quality & Integrity",
+        "description": "Prioritizing product quality, system security, and customer satisfaction."
+      },
+      "growth": {
+        "title": "Future Technology",
+        "description": "Continuously adopting the latest technologies to stay innovative and competitive."
+      }
+    },
+
+    "stats": {
+      "projects": {
+        "title": "Projects",
+        "description": "Successfully Completed"
+      },
+      "clients": {
+        "title": "Clients",
+        "description": "Across Various Industries"
+      },
+      "experience": {
+        "title": "Services",
+        "description": "Technology Solutions"
+      },
+      "quality": {
+        "title": "Satisfaction",
+        "description": "Service Commitment"
+      }
+    }
+  },
+
+  "Services": {
+    "badge": "Our Services",
+    "title1": "Technology Solutions for",
+    "title2": "Every Business Need.",
+
+    "items": {
+      "development": {
+        "title": "Software Development",
+        "description": "We build secure, modern web, mobile, and desktop applications tailored to your business needs to improve productivity."
+      },
+
+      "consulting": {
+        "title": "IT Consulting",
+        "description": "Providing strategic guidance to help businesses choose the right technology solutions for digital transformation and operational efficiency."
+      },
+
+      "analysis": {
+        "title": "System Analysis & Design",
+        "description": "We analyze business requirements and design scalable, well-structured systems that support long-term growth."
+      },
+
+      "support": {
+        "title": "Maintenance & Technical Support",
+        "description": "Comprehensive maintenance and technical support services to ensure your applications and infrastructure remain reliable and secure."
+      },
+
+      "training": {
+        "title": "Technology Training",
+        "description": "Structured training programs that empower your team to confidently operate, manage, and develop technology solutions independently."
+      }
+    }
   }
+
 }

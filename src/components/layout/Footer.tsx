@@ -28,7 +28,7 @@ export default function Footer() {
     {href: "mailto:aksatanusantara@gmail.com", icon: HiOutlineEnvelope,},
     {href: "https://instagram.com", icon: FaInstagram,},
     {href: "tel:+6287867171882", icon: HiOutlinePhone,},
-    {href: "https://linkedin.com", icon: FaLinkedin,},
+    // {href: "https://linkedin.com", icon: FaLinkedin,},
   ];
   
    return (

@@ -78,6 +78,86 @@
         "description": "Integrasi sistem dan teknologi sesuai kebutuhan bisnis Anda."
       }
     }
-  }
+  },
+
+  "About": {
+    "badge": "Tentang Kami",
+
+    "title1": "Mitra Teknologi",
+    "title2": "yang Bertumbuh Bersama",
+
+    "description": "PT Aksata Nusantara Infosysjaya merupakan perusahaan Software & Hardware House yang berfokus pada pengembangan solusi digital modern. Kami membantu perusahaan meningkatkan efisiensi, produktivitas, dan transformasi bisnis melalui teknologi yang inovatif, aman, dan berkelanjutan.",
+
+    "features": {
+      "solution": {
+        "title": "Solusi Inovatif",
+        "description": "Mengembangkan aplikasi dan sistem yang sesuai dengan kebutuhan bisnis modern."
+      },
+      "collaboration": {
+        "title": "Kolaborasi Profesional",
+        "description": "Bekerja sama dengan klien untuk menghasilkan solusi terbaik yang tepat sasaran."
+      },
+      "integrity": {
+        "title": "Kualitas & Integritas",
+        "description": "Mengutamakan kualitas produk, keamanan sistem, dan kepuasan pelanggan."
+      },
+      "growth": {
+        "title": "Teknologi Berkembang",
+        "description": "Terus mengikuti perkembangan teknologi agar solusi selalu relevan dan berdaya saing."
+      }
+    },
+
+    "stats": {
+      "projects": {
+        "title": "Project",
+        "description": "Berhasil Diselesaikan"
+      },
+      "clients": {
+        "title": "Klien",
+        "description": "Dari Berbagai Industri"
+      },
+      "experience": {
+        "title": "Layanan",
+        "description": "Solusi Teknologi"
+      },
+      "quality": {
+        "title": "Kepuasan",
+        "description": "Komitmen Pelayanan"
+      }
+    }
+  },
+
+  "Services": {
+      "badge": "Layanan Kami",
+      "title1": "Solusi Teknologi untuk",
+      "title2": "Setiap Kebutuhan Bisnis.",
+
+      "items": {
+        "development": {
+          "title": "Pengembangan Aplikasi Perangkat Lunak",
+          "description": "Kami membangun aplikasi web, mobile, dan desktop yang aman, modern, serta dirancang sesuai kebutuhan bisnis untuk meningkatkan produktivitas perusahaan."
+        },
+
+        "consulting": {
+          "title": "Konsultasi Teknologi Informasi",
+          "description": "Memberikan pendampingan strategis dalam memilih solusi teknologi yang tepat guna mendukung transformasi digital dan efisiensi operasional."
+        },
+
+        "analysis": {
+          "title": "Analisis & Perancangan Sistem",
+          "description": "Menganalisis kebutuhan bisnis kemudian merancang sistem yang scalable, terstruktur, dan siap dikembangkan sesuai pertumbuhan perusahaan."
+        },
+
+        "support": {
+          "title": "Pemeliharaan & Dukungan Teknis",
+          "description": "Layanan maintenance dan technical support untuk memastikan aplikasi maupun infrastruktur tetap berjalan stabil, aman, dan optimal."
+        },
+
+        "training": {
+          "title": "Pelatihan & Transfer Teknologi",
+          "description": "Pelatihan bagi tim agar mampu mengoperasikan, mengelola, serta mengembangkan sistem secara mandiri dengan lebih percaya diri."
+        }
+      }
+    }
 }
 

@@ -3,12 +3,10 @@
 import { ButtonHTMLAttributes } from "react";
 
 type ButtonVariant = "primary" | "outline";
-
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
   children: React.ReactNode;
 }
-
 export default function Button({
   variant = "primary",
   children,
@@ -24,7 +22,6 @@ export default function Button({
       color: "#fff",
       border: "1px solid transparent",
     },
-
     outline: {
       background: "transparent",
       color: "var(--text-primary)",
@@ -52,8 +49,7 @@ export default function Button({
           e.currentTarget.style.borderColor = "var(--border)";
           e.currentTarget.style.color = "var(--text-primary)";
         }
-      }}
-    >
+      }}>
       {children}
     </button>
   );
