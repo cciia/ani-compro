@@ -3,55 +3,71 @@
 import HeroCard from "@/components/cards/HeroCard";
 import Button from "@/components/ui/Button";
 import { useTranslations } from "next-intl";
+import {motion, useScroll, useTransform,} from "framer-motion";
+import { useRef } from "react";
 import {HiOutlineCodeBracket, HiOutlineCpuChip, HiOutlineChartBar, HiOutlineWrenchScrewdriver, HiOutlineAcademicCap, HiOutlineSquares2X2,} from "react-icons/hi2";
 
 export default function Hero() {
   const t = useTranslations("Hero");
+  const heroRef = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({target: heroRef, offset: ["start start", "end start"],});
+  const leftX = useTransform(scrollYProgress, [0, 1], [0, -250]);
+  const rightX = useTransform(scrollYProgress, [0, 1], [0, 250]);
+  const fade = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
 return (
-    <section
-      id="home" className="relative flex min-h-[123vh] items-center justify-center overflow-hidden pt-10" style={{background: "var(--surface)",}}>
+    <section ref={heroRef}
+      id="home" className="relative flex min-h-[120vh] items-center justify-center overflow-hidden pt-10" style={{background: "var(--surface)",}}>
       <div
         className="absolute left-1/2 top-1/2 h-130 w-130 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-70 blur-3xl" style={{background: "var(--primary-soft)", }}/>
-      <div className="absolute left-8 top-[56%] hidden -translate-y-1/2 xl:block">
+      <motion.div style={{x: leftX, opacity: fade,}} className="absolute left-6 top-[58%] hidden h-150 w-80 -translate-y-1/2 xl:block">
         <HeroCard
-          className="mb-10"
+          delay={0.2}
+          className="absolute left-0 top-8 z-30"
           icon={HiOutlineCodeBracket}
           title={t("cards.app.title")}
           description={t("cards.app.description")}
           rotate="-8deg"/>
         <HeroCard
-          className="ml-8 mb-10"
+          delay={0.4}
+          className="absolute left-12 top-34 z-20"
           icon={HiOutlineCpuChip}
+          iconPosition="right"
           title={t("cards.consult.title")}
           description={t("cards.consult.description")}
           rotate="6deg"/>
         <HeroCard
+          delay={0.6}
+          className="absolute left-2 top-64 z-10"
           icon={HiOutlineChartBar}
           title={t("cards.analysis.title")}
           description={t("cards.analysis.description")}
           rotate="-7deg"/>
-      </div>
-      <div className="absolute right-8 top-[56%] hidden -translate-y-1/2 xl:block">
+      </motion.div>
+      <motion.div style={{x: rightX, opacity: fade,}} className="absolute right-6 top-[58%] hidden h-150 w-80 -translate-y-1/2 xl:block">
         <HeroCard
-          className="mr-8 mb-10"
+          delay={0.3}
+          className="absolute right-0 top-8 z-30"
           icon={HiOutlineWrenchScrewdriver}
           title={t("cards.support.title")}
           description={t("cards.support.description")}
-          rotate="7deg"/>
+          rotate="8deg"/>
         <HeroCard
-          className="mb-10"
+          delay={0.5}
+          className="absolute right-12 top-34 z-20"
           icon={HiOutlineAcademicCap}
           title={t("cards.training.title")}
           description={t("cards.training.description")}
           rotate="-8deg"/>
         <HeroCard
-          className="mr-10"
+          delay={0.7}
+          className="absolute right-2 top-64 z-10"
           icon={HiOutlineSquares2X2}
+          iconPosition="right"
           title={t("cards.integration.title")}
           description={t("cards.integration.description")}
-          rotate="8deg"/>
-      </div>
+          rotate="7deg"/>
+      </motion.div>
       <div className="relative z-10 mx-auto max-w-3xl text-center">
         <h1
           className="text-3xl font-extrabold leading-tight lg:text-5xl" style={{color: "var(--text-primary)",}}>

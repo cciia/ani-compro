@@ -1,77 +1,25 @@
 "use client";
 
-import CountUp from "react-countup";
 import { IconType } from "react-icons";
-import { motion } from "framer-motion";
+import CountUp from "react-countup";
 
 type StatCardProps = {icon: IconType; value: number; suffix?: string; title: string; description: string; delay?: number;};
 
-export default function StatCard({
-  icon: Icon,
-  value,
-  suffix = "",
-  title,
-  description,
-  delay = 0,
-}: StatCardProps) {
+export default function StatCard({icon: Icon, value, suffix = "", title, description,}: 
+  
+StatCardProps) {
   return (
-    <motion.div
-      initial={{
-        opacity: 0,
-        y: 25,
-      }}
-      whileInView={{
-        opacity: 1,
-        y: 0,
-      }}
-      viewport={{
-        once: true,
-        amount: 0.4,
-      }}
-      transition={{
-        duration: 0.6,
-        delay,
-      }}
-      className="flex flex-col"
-    >
-      {/* Icon */}
-      <Icon
-        size={24}
-        style={{
-          color: "var(--primary)",
-        }}/>
-
-      {/* Number */}
-      <h3
-        className="mt-3 text-4xl font-bold"
-        style={{
-          color: "var(--primary)",
-        }}
-      >
-        <CountUp
-          end={value}
-          duration={2}
-        />
-        {suffix}
+    <div className="flex flex-col">
+      <Icon size={24} style={{color: "var(--primary)",}}/>
+      <h3 className="mt-2 text-3xl font-bold" style={{color: "var(--primary)",}}>
+         <CountUp end={value} duration={2} enableScrollSpy scrollSpyOnce/>{suffix}
       </h3>
-
-      {/* Title */}
-      <h4
-        className="mt-2 text-sm font-semibold"
-        style={{
-          color: "var(--text-primary)",
-        }}
-      >
+      <h4 className="mt-2 text-sm font-bold" style={{color: "var(--text-primary)",}}>
         {title}
       </h4>
-      <p
-        className="mt-1 text-xs leading-5"
-        style={{
-          color: "var(--text-secondary)",
-        }}
-      >
+      <p className="mt-1 text-xs leading-5" style={{color: "var(--text-secondary)",}}>
         {description}
       </p>
-    </motion.div>
+    </div>
   );
 }
