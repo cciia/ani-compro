@@ -41,8 +41,6 @@ Website ini dibuat sebagai media informasi resmi perusahaan yang menampilkan pro
 | next-intl | Internationalization |
 | next-themes | Dark Mode |
 | React Icons | Icons |
-| Lucide React | Icons |
-| Swiper | Carousel |
 
 ---
 
