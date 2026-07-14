@@ -162,50 +162,50 @@
 
   "Clients": {
     "badge": "Our Clients",
-    "title1": "Trusted by various companies",
-    "title2": "to deliver innovative technology solutions.",
+    "title1": "Trusted by Companies",
+    "title2": "to Deliver Innovative Technology Solutions.",
 
     "industries": {
       "private": {
         "title": "Private Companies",
-        "description": "Serving various industries."
+        "description": "Supporting diverse business sectors."
       },
       "government": {
-        "title": "Industry & Government",
-        "description": "Digital solutions for public services."
+        "title": "Government",
+        "description": "Empowering public services."
       },
       "education": {
         "title": "Education",
-        "description": "Driving educational transformation."
+        "description": "Advancing digital learning."
       },
       "health": {
         "title": "Healthcare",
-        "description": "Innovative solutions for healthcare services."
+        "description": "Innovating healthcare services."
       },
       "retail": {
         "title": "Retail & Distribution",
-        "description": "Improving operational efficiency."
+        "description": "Optimizing business operations."
       }
     },
 
-    "testimonialBadge": "What They Say",
-    "testimonialTitle": "Building Trust Together.",
+    "testimonialBadge": "Testimonials",
+    "testimonialTitle": "Building Trust Through Collaboration.",
 
     "testimonials": {
       "1": {
         "name": "Mr. X",
         "position": "Director",
-        "comment": "Aksata quickly understood our needs and delivered the right solution. Their professional approach and outstanding results exceeded our expectations."
+        "comment": "Aksata quickly understood our business needs and delivered the right solution. Their professionalism and commitment exceeded our expectations."
       },
       "2": {
         "name": "Ms. X",
         "position": "Operations Manager",
-        "comment": "The solutions provided by Aksata improved our operational efficiency and supported our business growth."
+        "comment": "The solutions provided by Aksata significantly improved our operational efficiency. The team was responsive, reliable, and easy to work with."
       },
       "3": {
         "name": "Mrs. X",
         "position": "Head of Division",
-        "comment": "Excellent collaboration from start to finish. The Aksata team was responsive, communicative, and consistently delivered their best."
+        "comment": "Working with Aksata was a seamless experience from start to finish. Their expertise and dedication resulted in a successful project."
       }
     }
   }

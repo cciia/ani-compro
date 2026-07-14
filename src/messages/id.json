@@ -168,44 +168,44 @@
     "industries": {
       "private": {
         "title": "Perusahaan Swasta",
-        "description": "Berbagai sektor industri."
+        "description": "Mendukung berbagai sektor bisnis."
       },
       "government": {
-        "title": "Industri & Pemerintahan",
-        "description": "Solusi digital untuk pelayanan."
+        "title": "Pemerintahan",
+        "description": "Transformasi layanan publik."
       },
       "education": {
         "title": "Pendidikan",
-        "description": "Mendorong transformasi pembelajaran."
+        "description": "Digitalisasi institusi pendidikan."
       },
       "health": {
         "title": "Kesehatan",
-        "description": "Inovasi bagi layanan kesehatan."
+        "description": "Solusi untuk layanan kesehatan."
       },
       "retail": {
         "title": "Retail & Distribusi",
-        "description": "Meningkatkan efisiensi operasional."
+        "description": "Optimalisasi operasional bisnis."
       }
     },
 
-    "testimonialBadge": "Apa Kata Mereka",
+    "testimonialBadge": "Testimoni",
     "testimonialTitle": "Kepercayaan yang Dibangun Bersama.",
 
     "testimonials": {
       "1": {
         "name": "Mr. X",
         "position": "Direktur",
-        "comment": "Aksata mampu memahami kebutuhan kami dengan cepat dan memberikan solusi yang tepat. Proses kerja profesional dan hasilnya sangat memuaskan."
+        "comment": "Tim Aksata bekerja profesional dan mampu memahami kebutuhan kami dengan sangat baik. Solusi yang diberikan tepat sasaran dan sesuai ekspektasi."
       },
       "2": {
         "name": "Ms. X",
         "position": "Manajer Operasional",
-        "comment": "Solusi yang diberikan Aksata membantu kami meningkatkan efisiensi operasional dan mendukung pertumbuhan bisnis kami."
+        "comment": "Implementasi sistem berjalan lancar dengan komunikasi yang responsif. Kami merasakan peningkatan efisiensi dalam proses operasional."
       },
       "3": {
         "name": "Mrs. X",
         "position": "Kepala Divisi",
-        "comment": "Kolaborasi yang sangat baik dari awal hingga selesai. Tim Aksata responsif, komunikatif, dan selalu memberikan yang terbaik."
+        "comment": "Kolaborasi yang menyenangkan dari awal hingga akhir proyek. Tim sangat kooperatif dan hasil akhirnya memuaskan."
       }
     }
   }
