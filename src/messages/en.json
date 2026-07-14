@@ -158,6 +158,56 @@
         "description": "Structured training programs that empower your team to confidently operate, manage, and develop technology solutions independently."
       }
     }
+  },
+
+  "Clients": {
+    "badge": "Our Clients",
+    "title1": "Trusted by various companies",
+    "title2": "to deliver innovative technology solutions.",
+
+    "industries": {
+      "private": {
+        "title": "Private Companies",
+        "description": "Serving various industries."
+      },
+      "government": {
+        "title": "Industry & Government",
+        "description": "Digital solutions for public services."
+      },
+      "education": {
+        "title": "Education",
+        "description": "Driving educational transformation."
+      },
+      "health": {
+        "title": "Healthcare",
+        "description": "Innovative solutions for healthcare services."
+      },
+      "retail": {
+        "title": "Retail & Distribution",
+        "description": "Improving operational efficiency."
+      }
+    },
+
+    "testimonialBadge": "What They Say",
+    "testimonialTitle": "Building Trust Together.",
+
+    "testimonials": {
+      "1": {
+        "name": "Mr. X",
+        "position": "Director",
+        "comment": "Aksata quickly understood our needs and delivered the right solution. Their professional approach and outstanding results exceeded our expectations."
+      },
+      "2": {
+        "name": "Ms. X",
+        "position": "Operations Manager",
+        "comment": "The solutions provided by Aksata improved our operational efficiency and supported our business growth."
+      },
+      "3": {
+        "name": "Mrs. X",
+        "position": "Head of Division",
+        "comment": "Excellent collaboration from start to finish. The Aksata team was responsive, communicative, and consistently delivered their best."
+      }
+    }
   }
 
 }

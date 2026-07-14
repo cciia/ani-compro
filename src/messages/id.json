@@ -158,6 +158,56 @@
           "description": "Pelatihan bagi tim agar mampu mengoperasikan, mengelola, serta mengembangkan sistem secara mandiri dengan lebih percaya diri."
         }
       }
+    },
+
+  "Clients": {
+    "badge": "Klien Kami",
+    "title1": "Dipercaya oleh berbagai perusahaan",
+    "title2": "untuk menghadirkan solusi teknologi.",
+
+    "industries": {
+      "private": {
+        "title": "Perusahaan Swasta",
+        "description": "Berbagai sektor industri."
+      },
+      "government": {
+        "title": "Industri & Pemerintahan",
+        "description": "Solusi digital untuk pelayanan."
+      },
+      "education": {
+        "title": "Pendidikan",
+        "description": "Mendorong transformasi pembelajaran."
+      },
+      "health": {
+        "title": "Kesehatan",
+        "description": "Inovasi bagi layanan kesehatan."
+      },
+      "retail": {
+        "title": "Retail & Distribusi",
+        "description": "Meningkatkan efisiensi operasional."
+      }
+    },
+
+    "testimonialBadge": "Apa Kata Mereka",
+    "testimonialTitle": "Kepercayaan yang Dibangun Bersama.",
+
+    "testimonials": {
+      "1": {
+        "name": "Mr. X",
+        "position": "Direktur",
+        "comment": "Aksata mampu memahami kebutuhan kami dengan cepat dan memberikan solusi yang tepat. Proses kerja profesional dan hasilnya sangat memuaskan."
+      },
+      "2": {
+        "name": "Ms. X",
+        "position": "Manajer Operasional",
+        "comment": "Solusi yang diberikan Aksata membantu kami meningkatkan efisiensi operasional dan mendukung pertumbuhan bisnis kami."
+      },
+      "3": {
+        "name": "Mrs. X",
+        "position": "Kepala Divisi",
+        "comment": "Kolaborasi yang sangat baik dari awal hingga selesai. Tim Aksata responsif, komunikatif, dan selalu memberikan yang terbaik."
+      }
     }
+  }
 }
 
