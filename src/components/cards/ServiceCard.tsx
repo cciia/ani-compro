@@ -4,7 +4,6 @@ import { IconType } from "react-icons";
 import { motion } from "framer-motion";
 
 type ServiceCardProps = {icon: IconType; number: string; title: string; description: string; delay?: number;};
-
 export default function ServiceCard({icon: Icon, number, title, description, delay = 0,}: 
 
 ServiceCardProps) {

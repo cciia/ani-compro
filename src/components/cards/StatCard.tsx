@@ -4,7 +4,6 @@ import { IconType } from "react-icons";
 import CountUp from "react-countup";
 
 type StatCardProps = {icon: IconType; value: number; suffix?: string; title: string; description: string; delay?: number;};
-
 export default function StatCard({icon: Icon, value, suffix = "", title, description,}: 
   
 StatCardProps) {

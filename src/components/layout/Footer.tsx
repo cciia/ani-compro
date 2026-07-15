@@ -118,9 +118,6 @@ export default function Footer() {
                 </p>
               </div>
             </div>
-            <div className="mt-4 overflow-hidden rounded-2xl" style={{border: "1px solid var(--border)",}}>
-              <Image src="/images/maps.png" alt="Google Maps" width={300} height={160} className="h-auto w-full object-cover"/>
-            </div>
           </div>
         </div>
         <div className="mt-8 pt-3 text-xs" style={{borderTop: "1px solid var(--primary)", color: "var(--text-secondary)",}}>

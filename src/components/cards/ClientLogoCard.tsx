@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import type { ClientLogo } from "@/data/clients";
 
 type ClientLogoCardProps = {logo: ClientLogo;};
-
 export default function ClientLogoCard({logo,}: 
   
 ClientLogoCardProps) {

@@ -14,9 +14,6 @@
   --text-muted: #9CA3AF;
   --border: #ECECEC;
   --shadow: rgba(15, 23, 42, .08);
-  --success: #16A34A;
-  --warning: #F59E0B;
-  --danger: #DC2626;
   --radius: 24px;
 }
 
@@ -34,9 +31,6 @@
   --text-muted: #94A3B8;
   --border: #253347;
   --shadow: rgba(0, 0, 0, .45);
-  --success: #22C55E;
-  --warning: #FBBF24;
-  --danger: #F87171;
   --radius: 24px;
 }
 

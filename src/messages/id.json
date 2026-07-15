@@ -208,6 +208,41 @@
         "comment": "Kolaborasi yang menyenangkan dari awal hingga akhir proyek. Tim sangat kooperatif dan hasil akhirnya memuaskan."
       }
     }
+  },
+
+  "Contact": {
+    "badge": "Hubungi Kami",
+
+    "title1": "Mari Bersenergi untuk",
+    "title2": "Solusi Terbaik",
+    "title3": "Bisnis Anda.",
+
+    "phone": {
+      "title": "Telepon",
+      "value": "0878-6717-1882"
+    },
+
+    "email": {
+      "title": "Email",
+      "value": "aksatanusantara@gmail.com"
+    },
+
+    "address": {
+      "title": "Alamat",
+      "value": "Perum Taman Pondok Jati Blok L No.11, Sidoarjo – Jawa Timur"
+    },
+
+    "hours": {
+      "title": "Jam Operasional",
+      "value": "Senin – Jumat : 08.00 – 17.00 WIB\nSabtu : 08.00 – 13.00 WIB"
+    },
+
+    "cta": {
+      "title": "Butuh Konsultasi Cepat?",
+      "description": "Hubungi kami sekarang untuk mendapatkan solusi terbaik bagi bisnis Anda.",
+      "button": "Hubungi Sekarang"
+    }
   }
+
 }
 
