@@ -6,21 +6,22 @@ import { motion } from "framer-motion";
 export default function FloatingWhatsApp() {
   return (
     <motion.a
-      href="https://wa.me/6281234567890"
+      href="https://wa.me/87867171882"
       target="_blank"
       rel="noopener noreferrer"
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{
         opacity: 1,
         scale: 1,
-        y: [0, -10, 0],
+        y: [0, -18, 0],
       }}
       transition={{
         opacity: { duration: 0.5 },
         scale: { duration: 0.5 },
         y: {
-          duration: 2,
+          duration: 0.8,
           repeat: Infinity,
+          repeatDelay:2,
           ease: "easeInOut",
         },
       }}

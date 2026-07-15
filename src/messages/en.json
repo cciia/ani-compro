@@ -8,7 +8,12 @@
   },
 
   "Footer": {
+    "company": {
+      "name": "PT Aksata Nusantara Infosysjaya"
+    },
+
     "description": "PT Aksata Nusantara Infosysjaya is a technology company providing innovative digital solutions to support business transformation through software, hardware and IT consulting services.",
+    
     "navigation": {
       "title": "Navigation",
       "home": "Home",
@@ -29,7 +34,7 @@
 
     "contact": {
       "title": "Contact Us",
-      "email": "aksatanusantara@gmail.com",
+      "email": "info@aksani.web.id",
       "phone": "0878-6717-1882",
       "address": "Perum Taman Pondok Jati Block L No.11, Sidoarjo"
     },
@@ -207,6 +212,39 @@
         "position": "Head of Division",
         "comment": "Working with Aksata was a seamless experience from start to finish. Their expertise and dedication resulted in a successful project."
       }
+    }
+  },
+
+  "Contact": {
+    "badge": "Contact Us",
+    "title1": "Let's Empower Your",
+    "title2": "Business with the Best",
+    "title3": "Solutions.",
+
+    "phone": {
+      "title": "Phone",
+      "value": "+62 878-6717-1882"
+    },
+
+    "email": {
+      "title": "Email",
+      "value": "info@aksani.web.id"
+    },
+
+    "address": {
+      "title": "Address",
+      "value": "Jl. Taman Pd. Jati L No.11, Geluran, Taman District, Sidoarjo Regency, East Java, Indonesia"
+    },
+
+    "hours": {
+      "title": "Business Hours",
+      "value": "Monday – Friday: 08:00 AM – 05:00 PM\nSaturday: 08:00 AM – 01:00 PM"
+    },
+
+    "cta": {
+      "title": "Need a Quick Consultation?",
+      "description": "Contact us today and let our experts help you find the best solution for your business.",
+      "button": "Contact Us"
     }
   }
 

@@ -22,14 +22,14 @@ return (
         className="absolute left-1/2 top-1/2 h-130 w-130 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-70 blur-3xl" style={{background: "var(--primary-soft)", }}/>
       <motion.div style={{x: leftX, opacity: fade,}} className="absolute left-6 top-[58%] hidden h-150 w-80 -translate-y-1/2 xl:block">
         <HeroCard
-          delay={0.2}
+          delay={0.4}
           className="absolute left-0 top-8 z-30"
           icon={HiOutlineCodeBracket}
           title={t("cards.app.title")}
           description={t("cards.app.description")}
           rotate="-8deg"/>
         <HeroCard
-          delay={0.4}
+          delay={0.6}
           className="absolute left-12 top-34 z-20"
           icon={HiOutlineCpuChip}
           iconPosition="right"
@@ -37,7 +37,7 @@ return (
           description={t("cards.consult.description")}
           rotate="6deg"/>
         <HeroCard
-          delay={0.6}
+          delay={0.8}
           className="absolute left-2 top-64 z-10"
           icon={HiOutlineChartBar}
           title={t("cards.analysis.title")}
@@ -46,21 +46,21 @@ return (
       </motion.div>
       <motion.div style={{x: rightX, opacity: fade,}} className="absolute right-6 top-[58%] hidden h-150 w-80 -translate-y-1/2 xl:block">
         <HeroCard
-          delay={0.3}
+          delay={0.5}
           className="absolute right-0 top-8 z-30"
           icon={HiOutlineWrenchScrewdriver}
           title={t("cards.support.title")}
           description={t("cards.support.description")}
           rotate="8deg"/>
         <HeroCard
-          delay={0.5}
+          delay={0.7}
           className="absolute right-12 top-34 z-20"
           icon={HiOutlineAcademicCap}
           title={t("cards.training.title")}
           description={t("cards.training.description")}
           rotate="-8deg"/>
         <HeroCard
-          delay={0.7}
+          delay={0.9}
           className="absolute right-2 top-64 z-10"
           icon={HiOutlineSquares2X2}
           iconPosition="right"

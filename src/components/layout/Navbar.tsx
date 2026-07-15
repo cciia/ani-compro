@@ -32,7 +32,7 @@ export default function Navbar() {
           }}>
           <div className="flex h-14 items-center justify-between px-7">
             <Link href="/" className="flex items-center">
-              <Image src="/logos/logo-ani.png" alt="ANI Logo" width={120} height={40} loading="eager" className="h-11 w-auto object-contain transition-transform duration-300 hover:scale-105"/>
+              <Image src="/logos/logo-ani.png" alt="ANI Logo" width={180} height={60} loading="eager" className="h-14 w-auto object-contain transition-transform duration-300 hover:scale-105"/>
             </Link>
             <ul className="hidden md:flex items-center gap-10">
               {menus.map((item) => (

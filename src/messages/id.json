@@ -8,33 +8,38 @@
   },
 
   "Footer": {
+    "company": {
+      "name": "PT Aksata Nusantara Infosysjaya"
+    },
+
     "description": "PT Aksata Nusantara Infosysjaya merupakan perusahaan teknologi yang menyediakan solusi digital inovatif untuk membantu transformasi bisnis melalui layanan software, hardware dan konsultasi TI.",
+
     "navigation": {
-    "title": "Navigasi",
-    "home": "Beranda",
-    "about": "Tentang Kami",
-    "services": "Layanan",
-    "clients": "Klien",
-    "contact": "Hubungi Kami"
-  },
+      "title": "Navigasi",
+      "home": "Beranda",
+      "about": "Tentang Kami",
+      "services": "Layanan",
+      "clients": "Klien",
+      "contact": "Hubungi Kami"
+    },
 
-  "services": {
-    "title": "Layanan Kami",
-    "appDevelopment": "Pengembangan Aplikasi",
-    "itConsulting": "Konsultasi TI",
-    "systemAnalysis": "Analisis Sistem",
-    "technicalSupport": "Dukungan Teknis",
-    "technologyTraining": "Pelatihan Teknologi"
-  },
+    "services": {
+      "title": "Layanan Kami",
+      "appDevelopment": "Pengembangan Aplikasi",
+      "itConsulting": "Konsultasi TI",
+      "systemAnalysis": "Analisis Sistem",
+      "technicalSupport": "Dukungan Teknis",
+      "technologyTraining": "Pelatihan Teknologi"
+    },
 
-  "contact": {
-    "title": "Hubungi Kami",
-    "email": "aksatanusantara@gmail.com",
-    "phone": "0878-6717-1882",
-    "address": "Perum Taman Pondok Jati Blok L No.11 Sidoarjo"
-  },
+    "contact": {
+      "title": "Hubungi Kami",
+      "email": "info@aksani.web.id",
+      "phone": "0878-6717-1882",
+      "address": "Perum Taman Pondok Jati Blok L No.11 Sidoarjo"
+    },
 
-  "copyright": "© 2026 PT Aksata Nusantara Infosysjaya. Hak cipta dilindungi."
+    "copyright": "© 2026 PT Aksata Nusantara Infosysjaya. Hak cipta dilindungi."
   },
 
   "Hero": {
@@ -224,12 +229,12 @@
 
     "email": {
       "title": "Email",
-      "value": "aksatanusantara@gmail.com"
+      "value": "info@aksani.web.id"
     },
 
     "address": {
       "title": "Alamat",
-      "value": "Perum Taman Pondok Jati Blok L No.11, Sidoarjo – Jawa Timur"
+      "value": "Jl. Taman Pd. Jati L No.11, Geluran, Kec. Taman, Kabupaten Sidoarjo"
     },
 
     "hours": {
