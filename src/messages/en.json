@@ -11,9 +11,7 @@
     "company": {
       "name": "PT Aksata Nusantara Infosysjaya"
     },
-
     "description": "PT Aksata Nusantara Infosysjaya is a technology company providing innovative digital solutions to support business transformation through software, hardware and IT consulting services.",
-    
     "navigation": {
       "title": "Navigation",
       "home": "Home",
@@ -22,7 +20,6 @@
       "clients": "Clients",
       "contact": "Contact"
     },
-
     "services": {
       "title": "Our Services",
       "appDevelopment": "Application Development",
@@ -31,14 +28,10 @@
       "technicalSupport": "Technical Support",
       "technologyTraining": "Technology Training"
     },
-
-    "contact": {
+   "contact": {
       "title": "Contact Us",
-      "email": "info@aksani.web.id",
-      "phone": "0878-6717-1882",
-      "address": "Perum Taman Pondok Jati Block L No.11, Sidoarjo"
+      "address": "Taman Pondok Jati Residence, Block L No.11, Geluran, Taman District, Sidoarjo Regency, East Java, Indonesia"
     },
-
     "copyright": "© 2026 PT Aksata Nusantara Infosysjaya. All rights reserved."
   },
 
@@ -46,38 +39,31 @@
     "title1": "Digital Transformation",
     "title2": "Starts With Us",
     "description": "PT Aksata Nusantara Infosysjaya delivers innovative technology solutions to help businesses improve efficiency, accelerate digital transformation, and achieve sustainable growth.",
-
     "button": {
       "primary": "Free Consultation",
       "secondary": "Our Services"
     },
-
     "cards": {
       "app": {
         "title": "Application Development",
         "description": "Innovative and high-quality web and mobile application solutions."
       },
-
       "consult": {
         "title": "IT Consulting",
         "description": "Professional IT consulting for effective business strategies."
       },
-
       "analysis": {
         "title": "System Analysis",
         "description": "Efficient and measurable system analysis and design."
       },
-
       "support": {
         "title": "Technical Support",
         "description": "Maintenance and technical support for optimal business operations."
       },
-
       "training": {
         "title": "Technology Training",
         "description": "Technology training to enhance your team's skills and expertise."
       },
-
       "integration": {
         "title": "Integrated Solutions",
         "description": "Integrated technology solutions tailored to your business needs."
@@ -87,12 +73,9 @@
 
   "About": {
     "badge": "About Us",
-
     "title1": "Technology Partner",
     "title2": "growing together",
-
     "description": "PT Aksata Nusantara Infosysjaya is a Software & Hardware House focused on delivering modern digital solutions. We help businesses improve efficiency, productivity, and digital transformation through innovative, secure, and sustainable technology.",
-
     "features": {
       "solution": {
         "title": "Innovative Solutions",
@@ -111,7 +94,6 @@
         "description": "Continuously adopting the latest technologies to stay innovative and competitive."
       }
     },
-
     "stats": {
       "projects": {
         "title": "Projects",
@@ -136,28 +118,23 @@
     "badge": "Our Services",
     "title1": "Technology Solutions for",
     "title2": "Every Business Need.",
-
     "items": {
       "development": {
         "title": "Software Development",
         "description": "We build secure, modern web, mobile, and desktop applications tailored to your business needs to improve productivity."
       },
-
       "consulting": {
         "title": "IT Consulting",
         "description": "Providing strategic guidance to help businesses choose the right technology solutions for digital transformation and operational efficiency."
       },
-
       "analysis": {
         "title": "System Analysis & Design",
         "description": "We analyze business requirements and design scalable, well-structured systems that support long-term growth."
       },
-
       "support": {
         "title": "Maintenance & Technical Support",
         "description": "Comprehensive maintenance and technical support services to ensure your applications and infrastructure remain reliable and secure."
       },
-
       "training": {
         "title": "Technology Training",
         "description": "Structured training programs that empower your team to confidently operate, manage, and develop technology solutions independently."
@@ -169,7 +146,6 @@
     "badge": "Our Clients",
     "title1": "Trusted by Companies",
     "title2": "to Deliver Innovative Technology Solutions.",
-
     "industries": {
       "private": {
         "title": "Private Companies",
@@ -192,10 +168,8 @@
         "description": "Optimizing business operations."
       }
     },
-
     "testimonialBadge": "Testimonials",
     "testimonialTitle": "Building Trust Through Collaboration.",
-
     "testimonials": {
       "1": {
         "name": "Mr. X",
@@ -217,34 +191,27 @@
 
   "Contact": {
     "badge": "Contact Us",
-    "title1": "Let's Empower Your",
-    "title2": "Business with the Best",
-    "title3": "Solutions.",
-
+    "title1": "Let's Build",
+    "title2": "The Best Solution",
+    "title3": "for Your Business.",
     "phone": {
-      "title": "Phone",
-      "value": "+62 878-6717-1882"
+      "title": "Phone"
     },
-
     "email": {
-      "title": "Email",
-      "value": "info@aksani.web.id"
+      "title": "Email"
     },
-
     "address": {
       "title": "Address",
-      "value": "Jl. Taman Pd. Jati L No.11, Geluran, Taman District, Sidoarjo Regency, East Java, Indonesia"
+      "value": "Taman Pondok Jati Residence, Block L No.11, Geluran, Taman District, Sidoarjo Regency, East Java, Indonesia"
     },
-
     "hours": {
       "title": "Business Hours",
-      "value": "Monday – Friday: 08:00 AM – 05:00 PM\nSaturday: 08:00 AM – 01:00 PM"
+      "value": "Monday – Friday : 8:00 AM – 5:00 PM\nSaturday : 8:00 AM – 1:00 PM"
     },
-
     "cta": {
       "title": "Need a Quick Consultation?",
-      "description": "Contact us today and let our experts help you find the best solution for your business.",
-      "button": "Contact Us"
+      "description": "Contact us today and let's find the best technology solution for your business.",
+      "button": "Contact Now"
     }
   }
 

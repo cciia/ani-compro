@@ -1,7 +1,9 @@
 "use client";
 
 import HeroCard from "@/components/cards/HeroCard";
-import Button from "@/components/ui/Button";
+import HeroMiniCard from "@/components/cards/HeroMiniCard";
+import ButtonLink from "@/components/ui/ButtonLink";
+import { CONTACT } from "@/data/contact";
 import { useTranslations } from "next-intl";
 import {motion, useScroll, useTransform,} from "framer-motion";
 import { useRef } from "react";
@@ -17,9 +19,40 @@ export default function Hero() {
 
 return (
     <section ref={heroRef}
-      id="home" className="relative flex min-h-[120vh] items-center justify-center overflow-hidden pt-10" style={{background: "var(--surface)",}}>
+      id="home" className="relative flex min-h-screen items-center justify-center overflow-hidden pt-10 lg:min-h-[110vh] xl:min-h-[120vh]" style={{background: "var(--surface)",}}>
       <div
         className="absolute left-1/2 top-1/2 h-130 w-130 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-70 blur-3xl" style={{background: "var(--primary-soft)", }}/>
+      {/* Mobile & Tablet Floating Cards */}
+      <div className="xl:hidden">
+        <div className="absolute left-3 top-24 z-20">
+          <HeroMiniCard
+            icon={HiOutlineCodeBracket}
+            title={t("cards.app.title")}
+            direction="tl"
+            delay={0}/>
+        </div>
+        <div className="absolute right-3 top-24 z-20">
+          <HeroMiniCard
+            icon={HiOutlineCpuChip}
+            title={t("cards.consult.title")}
+            direction="tr"
+            delay={0.4}/>
+        </div>
+        <div className="absolute bottom-24 left-3 z-20">
+          <HeroMiniCard
+            icon={HiOutlineWrenchScrewdriver}
+            title={t("cards.support.title")}
+            direction="bl"
+            delay={0.8}/>
+        </div>
+        <div className="absolute bottom-24 right-3 z-20">
+          <HeroMiniCard
+            icon={HiOutlineAcademicCap}
+            title={t("cards.training.title")}
+            direction="br"
+            delay={1.2}/>
+        </div>
+      </div>
       <motion.div style={{x: leftX, opacity: fade,}} className="absolute left-6 top-[58%] hidden h-150 w-80 -translate-y-1/2 xl:block">
         <HeroCard
           delay={0.4}
@@ -68,9 +101,9 @@ return (
           description={t("cards.integration.description")}
           rotate="7deg"/>
       </motion.div>
-      <div className="relative z-10 mx-auto max-w-3xl text-center">
+      <div className="relative z-10 mx-auto max-w-3xl px-6 text-center">
         <h1
-          className="text-3xl font-extrabold leading-tight lg:text-5xl" style={{color: "var(--text-primary)",}}>
+          className="text-4xl font-extrabold leading-tight lg:text-5xl" style={{color: "var(--text-primary)",}}>
           {t("title1")}
           <span
             className="block"
@@ -88,12 +121,12 @@ return (
           {t("description")}
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-5">
-          <Button variant="primary">
-            {t("button.primary")}
-          </Button>
-          <Button variant="outline">
-            {t("button.secondary")}
-          </Button>
+           <ButtonLink href={CONTACT.whatsapp.href} variant="primary" target="_blank">
+              {t("button.primary")}
+            </ButtonLink>
+            <ButtonLink href="#services" variant="outline">
+              {t("button.secondary")}
+            </ButtonLink>
         </div>
       </div>
     </section>

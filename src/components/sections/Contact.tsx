@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import ContactCard from "@/components/cards/ContactCard";
+import ButtonLink from "@/components/ui/ButtonLink";
+import { CONTACT } from "@/data/contact";
 import {HiOutlinePhone, HiOutlineEnvelope, HiOutlineMapPin, HiOutlineClock, HiOutlineChatBubbleLeftRight} from "react-icons/hi2";
 
 export default function Contact() {
@@ -28,25 +30,25 @@ export default function Contact() {
                 icon={HiOutlinePhone}
                 title={t("phone.title")}
                 delay={0.1}>
-                {t("phone.value")}
+                {CONTACT.phone.display}
               </ContactCard>
               <ContactCard
                 icon={HiOutlineEnvelope}
                 title={t("email.title")}
                 delay={0.2}>
-                {t("email.value")}
+                {CONTACT.email.address}
               </ContactCard>
               <ContactCard
                 icon={HiOutlineMapPin}
-                title={t("address.title")}
-                delay={0.3}>
+                title={t("address.title")}>
                 {t("address.value")}
               </ContactCard>
               <ContactCard
                 icon={HiOutlineClock}
-                title={t("hours.title")}
-                delay={0.4}>
-                {t("hours.value")}
+                title={t("hours.title")}>
+                <span className="whitespace-pre-line">
+                  {t("hours.value")}
+                </span>
               </ContactCard>
             </div>
             <div className="mt-7 rounded-2xl border px-5 py-3.5" style={{background: "var(--primary-light)", borderColor: "rgba(232,89,12,.12)",}}>
@@ -64,9 +66,9 @@ export default function Contact() {
                     </p>
                   </div>
                 </div>
-                <button className="h-12 min-w-51.25 rounded-xl border bg-white px-6 text-base font-semibold transition-all duration-300 hover:-translate-y-0.5" style={{borderColor: "var(--primary)", color: "var(--primary)",}}>
+                <ButtonLink href={CONTACT.whatsapp.href} target="_blank" variant="outline" className="h-12 min-w-51.25">
                   {t("cta.button")}
-                </button>
+                </ButtonLink>
               </div>
             </div>
           </div>
@@ -78,7 +80,7 @@ export default function Contact() {
             <div className="overflow-hidden rounded-2xl border" style={{background: "var(--surface)", borderColor: "var(--border)",}}>
               <iframe
                 title="Google Maps"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.8736104526038!2d112.69379237318694!3d-7.36806087250546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e3419b03adb9%3A0xbefcf2d12f31d51b!2sJl.%20Taman%20Pd.%20Jati%20L%20No.11%2C%20Geluran%2C%20Kec.%20Taman%2C%20Kabupaten%20Sidoarjo%2C%20Jawa%20Timur%2061257!5e0!3m2!1sen!2sid!4v1784087880517!5m2!1sen!2sid"
+                src={CONTACT.address.embed}
                 className="h-120 w-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

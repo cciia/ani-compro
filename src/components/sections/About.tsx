@@ -4,16 +4,34 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import AboutFeatureCard from "@/components/cards/AboutFeatureCard";
 import StatCard from "@/components/cards/StatCard";
+import { motion } from "framer-motion";
 import {HiOutlineRocketLaunch, HiOutlineHandRaised, HiOutlineShieldCheck, HiOutlineSparkles, HiOutlineUsers, HiOutlinePresentationChartLine, HiOutlineStar, HiOutlineCpuChip,} from "react-icons/hi2";
 
 export default function About() {
   const t = useTranslations("About");
+  const fadeLeft = {
+    hidden: { opacity: 0, x: -40 },
+    show: {opacity: 1,x: 0, transition: {duration: 0.7,},},
+  };
+  const fadeRight = {
+    hidden: { opacity: 0, x: 40 },
+    show: {opacity: 1,x: 0, transition: {duration: 0.7,},},
+  };
+  const fadeUp = {
+    hidden: { opacity: 0, y: 30 },
+    show: {opacity: 1, y: 0, transition: {duration: 0.6,},},
+  };
+
   return (
     <section
       id="about" className="relative overflow-hidden py-16 lg:py-20" style={{background: "var(--background)",}}>
       <div className="mx-auto w-full max-w-6xl px-6">
         <div className="grid items-center gap-8 lg:grid-cols-2">
-          <div> 
+          <motion.div
+              variants={fadeLeft}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.2 }}>
             <p className="font-semibold" style={{color: "var(--primary)",}}>
               {t("badge")}
             </p>
@@ -30,8 +48,13 @@ export default function About() {
               <AboutFeatureCard icon={HiOutlineShieldCheck} title={t("features.integrity.title")} description={t("features.integrity.description")}/>
               <AboutFeatureCard icon={HiOutlineSparkles} title={t("features.growth.title")} description={t("features.growth.description")}/>
             </div>
-          </div>
-          <div className="relative">
+          </motion.div>
+          <motion.div
+            className="relative"
+            variants={fadeRight}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.2 }}>
             <Image src="/images/about-main.jpg" alt="About" width={320} height={220}  className= "h-56 w-full rounded-2xl object-cover shadow-xl lg:h-64"/>
             <div className="mt-6 grid grid-cols-2 gap-6">
               <Image src="/images/about-1.jpg" alt="About" width={280} height={220} className="h-36 w-full rounded-2xl object-cover shadow-md"/>
@@ -45,7 +68,7 @@ export default function About() {
                 <StatCard icon={HiOutlineStar} value={100} suffix="%" title={t("stats.quality.title")} description={t("stats.quality.description")}/>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -1,39 +1,32 @@
 "use client";
 
-import { ButtonHTMLAttributes } from "react";
+import Link from "next/link";
+import { AnchorHTMLAttributes } from "react";
 
 type ButtonVariant = "primary" | "outline";
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: ButtonVariant;
-  children: React.ReactNode;
-}
+interface ButtonLinkProps
+extends AnchorHTMLAttributes<HTMLAnchorElement> { href: string; variant?: ButtonVariant; children: React.ReactNode;}
 
-export default function Button({
+export default function ButtonLink({
+  href,
   variant = "primary",
   children,
   className = "",
   ...props
-}: ButtonProps) {
+}: 
+
+ButtonLinkProps) {
   const baseClass =
-    "inline-flex items-center justify-center rounded-2xl px-6 py-3 text-base font-semibold transition-all duration-300 hover:-translate-y-0.5 cursor-pointer";
+    "inline-flex items-center justify-center rounded-2xl px-6 py-3 text-base font-semibold transition-all duration-300 hover:-translate-y-0.5";
 
   const variants = {
-    primary: {
-      background: "var(--primary)",
-      color: "#fff",
-      border: "1px solid transparent",
-    },
-    outline: {
-      background: "#fff",
-      color: "var(--primary)",
-      border: "1px solid var(--primary)",
-    },
+    primary: {background: "var(--primary)", color: "#fff", border: "1px solid transparent",},
+    outline: {background: "#fff", color: "var(--primary)", border: "1px solid var(--primary)",},
   };
-
   return (
-    <button
-      {...props}
+    <Link
+      href={href}
       className={`${baseClass} ${className}`}
       style={variants[variant]}
       onMouseEnter={(e) => {
@@ -51,8 +44,9 @@ export default function Button({
           e.currentTarget.style.background = "#fff";
           e.currentTarget.style.color = "var(--primary)";
         }
-      }}>
+      }}
+      {...props}>
       {children}
-    </button>
+    </Link>
   );
 }

@@ -2,11 +2,12 @@
 
 import { FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { CONTACT } from "@/data/contact";
 
 export default function FloatingWhatsApp() {
   return (
     <motion.a
-      href="https://wa.me/87867171882"
+      href={CONTACT.whatsapp.href}
       target="_blank"
       rel="noopener noreferrer"
       initial={{ opacity: 0, scale: 0.8 }}

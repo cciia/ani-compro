@@ -5,6 +5,8 @@ import Link from "next/link";
 import {HiOutlineEnvelope, HiOutlinePhone, HiOutlineMapPin,} from "react-icons/hi2";
 import {FaInstagram, FaLinkedin,} from "react-icons/fa6";
 import { useTranslations } from "next-intl";
+import SocialLink from "@/components/ui/SocialLink";
+import { CONTACT } from "@/data/contact";
 
 export default function Footer() {
   const t = useTranslations("Footer")
@@ -25,10 +27,10 @@ export default function Footer() {
   ];
   
   const socials = [
-    {href: "mailto:info@aksani.web.id", icon: HiOutlineEnvelope,},
-    {href: "https://instagram.com", icon: FaInstagram,},
-    {href: "tel:+6287867171882", icon: HiOutlinePhone,},
-    // {href: "https://linkedin.com", icon: FaLinkedin,},
+    {href: CONTACT.email.href, icon: HiOutlineEnvelope, label: "Email",},
+    {href: CONTACT.social.instagram.href, icon: FaInstagram, label: "Instagram",},
+    {href: CONTACT.phone.href, icon: HiOutlinePhone, label: "Phone",},
+    {href: CONTACT.social.linkedin.href, icon: FaLinkedin, label: "LinkedIn",},
   ];
   
 return (
@@ -44,15 +46,8 @@ return (
               {t("description")}
             </p>
             <div className="mt-5 flex justify-center gap-3 lg:justify-start">
-              {socials.map(({ href, icon: Icon }, index) => (
-                <Link
-                  key={index} 
-                  href={href} 
-                  className="rounded-xl p-3 transition-all duration-300 hover:scale-105" 
-                  style={{ background: "var(--primary)", color: "#fff" }}
-                >
-                  <Icon size={18} />
-                </Link>
+              {socials.map((social) => (
+                <SocialLink key={social.label} href={social.href} icon={social.icon} label={social.label}/>
               ))}
             </div>
           </div>
@@ -68,8 +63,7 @@ return (
                     className="transition-colors duration-300"
                     style={{ color: "var(--text-secondary)" }}
                     onMouseEnter={(e) => (e.currentTarget.style.color = "var(--primary)")}
-                    onMouseLeave={(e) => (e.currentTarget.style.color = "var(--text-secondary)")}
-                  >
+                    onMouseLeave={(e) => (e.currentTarget.style.color = "var(--text-secondary)")}>
                     {item.name}
                   </Link>
                 </li>
@@ -95,11 +89,11 @@ return (
             <div className="mt-4 space-y-3 text-sm flex flex-col items-center lg:items-start">
               <div className="flex items-center gap-3 text-left w-full justify-center lg:justify-start">
                 <HiOutlineEnvelope size={18} style={{ color: "var(--primary)", flexShrink: 0 }} />
-                <p style={{ color: "var(--text-secondary)" }}>{t("contact.email")}</p>
+                <p style={{ color: "var(--text-secondary)" }}>{CONTACT.email.address}</p>
               </div>
               <div className="flex items-center gap-3 text-left w-full justify-center lg:justify-start">
                 <HiOutlinePhone size={18} style={{ color: "var(--primary)", flexShrink: 0 }} />
-                <p style={{ color: "var(--text-secondary)" }}>{t("contact.phone")}</p>
+                <p style={{ color: "var(--text-secondary)" }}>{CONTACT.phone.display}</p>
               </div>
               <div className="flex items-start gap-3 text-left w-full justify-center lg:justify-start">
                 <HiOutlineMapPin size={18} className="mt-0.5 shrink-0" style={{ color: "var(--primary)" }} />

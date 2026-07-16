@@ -11,9 +11,7 @@
     "company": {
       "name": "PT Aksata Nusantara Infosysjaya"
     },
-
     "description": "PT Aksata Nusantara Infosysjaya merupakan perusahaan teknologi yang menyediakan solusi digital inovatif untuk membantu transformasi bisnis melalui layanan software, hardware dan konsultasi TI.",
-
     "navigation": {
       "title": "Navigasi",
       "home": "Beranda",
@@ -22,7 +20,6 @@
       "clients": "Klien",
       "contact": "Hubungi Kami"
     },
-
     "services": {
       "title": "Layanan Kami",
       "appDevelopment": "Pengembangan Aplikasi",
@@ -31,14 +28,10 @@
       "technicalSupport": "Dukungan Teknis",
       "technologyTraining": "Pelatihan Teknologi"
     },
-
     "contact": {
       "title": "Hubungi Kami",
-      "email": "info@aksani.web.id",
-      "phone": "0878-6717-1882",
-      "address": "Perum Taman Pondok Jati Blok L No.11 Sidoarjo"
+      "address": "Perum Taman Pondok Jati Blok L No.11, Geluran, Kecamatan Taman, Kabupaten Sidoarjo, Jawa Timur"
     },
-
     "copyright": "© 2026 PT Aksata Nusantara Infosysjaya. Hak cipta dilindungi."
   },
 
@@ -218,30 +211,26 @@
   "Contact": {
     "badge": "Hubungi Kami",
 
-    "title1": "Mari Bersenergi untuk",
+    "title1": "Mari Bersinergi untuk",
     "title2": "Solusi Terbaik",
     "title3": "Bisnis Anda.",
 
     "phone": {
-      "title": "Telepon",
-      "value": "0878-6717-1882"
+      "title": "Telepon"
     },
 
     "email": {
-      "title": "Email",
-      "value": "info@aksani.web.id"
+      "title": "Email"
     },
-
     "address": {
       "title": "Alamat",
-      "value": "Jl. Taman Pd. Jati L No.11, Geluran, Kec. Taman, Kabupaten Sidoarjo"
+      "value": "Perum Taman Pondok Jati Blok L No.11, Geluran, Kecamatan Taman, Kabupaten Sidoarjo, Jawa Timur, Indonesia"
     },
 
     "hours": {
       "title": "Jam Operasional",
       "value": "Senin – Jumat : 08.00 – 17.00 WIB\nSabtu : 08.00 – 13.00 WIB"
     },
-
     "cta": {
       "title": "Butuh Konsultasi Cepat?",
       "description": "Hubungi kami sekarang untuk mendapatkan solusi terbaik bagi bisnis Anda.",
