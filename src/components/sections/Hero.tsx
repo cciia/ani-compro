@@ -3,14 +3,15 @@
 import HeroCard from "@/components/cards/HeroCard";
 import HeroMiniCard from "@/components/cards/HeroMiniCard";
 import ButtonLink from "@/components/ui/ButtonLink";
-import { CONTACT } from "@/data/contact";
-import { useTranslations } from "next-intl";
+import { getWhatsappLink } from "@/lib/whatsapp";
+import { useTranslations, useLocale } from "next-intl";
 import {motion, useScroll, useTransform,} from "framer-motion";
 import { useRef } from "react";
 import {HiOutlineCodeBracket, HiOutlineCpuChip, HiOutlineChartBar, HiOutlineWrenchScrewdriver, HiOutlineAcademicCap, HiOutlineSquares2X2,} from "react-icons/hi2";
 
 export default function Hero() {
   const t = useTranslations("Hero");
+  const locale = useLocale();
   const heroRef = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({target: heroRef, offset: ["start start", "end start"],});
   const leftX = useTransform(scrollYProgress, [0, 1], [0, -250]);
@@ -121,7 +122,7 @@ return (
           {t("description")}
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-5">
-           <ButtonLink href={CONTACT.whatsapp.href} variant="primary" target="_blank">
+           <ButtonLink  href={getWhatsappLink(locale as "id" | "en", "consultation")} target="_blank" variant="primary">
               {t("button.primary")}
             </ButtonLink>
             <ButtonLink href="#services" variant="outline">

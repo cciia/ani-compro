@@ -2,12 +2,14 @@
 
 import { FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { CONTACT } from "@/data/contact";
+import { useLocale } from "next-intl";
+import { getWhatsappLink } from "@/lib/whatsapp";
 
 export default function FloatingWhatsApp() {
+  const locale = useLocale();
   return (
     <motion.a
-      href={CONTACT.whatsapp.href}
+      href={getWhatsappLink(locale as "id" | "en", "support")}
       target="_blank"
       rel="noopener noreferrer"
       initial={{ opacity: 0, scale: 0.8 }}

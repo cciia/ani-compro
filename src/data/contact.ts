@@ -5,7 +5,6 @@ export const CONTACT = {
   },
   whatsapp: {
     number: "6287867171882",
-    href: "https://wa.me/6287867171882",
   },
   email: {
     address: "info@aksani.web.id",

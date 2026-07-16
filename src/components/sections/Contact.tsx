@@ -1,14 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import ContactCard from "@/components/cards/ContactCard";
 import ButtonLink from "@/components/ui/ButtonLink";
 import { CONTACT } from "@/data/contact";
+import { getWhatsappLink } from "@/lib/whatsapp";
 import {HiOutlinePhone, HiOutlineEnvelope, HiOutlineMapPin, HiOutlineClock, HiOutlineChatBubbleLeftRight} from "react-icons/hi2";
 
 export default function Contact() {
   const t = useTranslations("Contact");
+  const locale = useLocale();
 
   return (
     <section id="contact" className="py-16 lg:py-20" style={{background: "var(--background)",}}>
@@ -66,7 +68,7 @@ export default function Contact() {
                     </p>
                   </div>
                 </div>
-                <ButtonLink href={CONTACT.whatsapp.href} target="_blank" variant="outline" className="h-12 min-w-51.25">
+                <ButtonLink href={getWhatsappLink(locale as "id" | "en", "contact")} target="_blank" variant="outline" className="h-12 min-w-51.25">
                   {t("cta.button")}
                 </ButtonLink>
               </div>
